@@ -1,0 +1,102 @@
+/**
+* The main scss file for this theme.
+* Add your custom styles here
+* @link https://sass-lang.com/
+*/
+
+@import "components/variables";
+
+// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+	color: $color_text;
+	font-family: $font-family_roboto;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.25;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	margin: 0 0 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family_roboto_c;
+	font-weight: 400;
+	color: $color_headings;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+
+button,
+.button {
+	display: inline-block;
+	border: none;
+	border-radius: 2px;
+	background: $background_button;
+	font-family: $font-family_roboto_c;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #eeeeee;
+	line-height: 1;
+	padding: 0.6rem 1.5rem 0.5rem;
+	min-height: 36px;
+	cursor: pointer;
+
+	&:-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+
+	&:-moz-focusring {
+		outline: none;
+	}
+}
+
+.block-feature {
+
+	display: flex;
+	justify-content: center;
+
+	.block-feature-container {
+		width: 1000px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 3.125rem 1rem;
+	}
+
+	.block-feature-row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}

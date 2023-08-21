@@ -1,0 +1,27 @@
+{
+    "name": "acf/feature",
+    "title": "Feature Block",
+    "description": "A test block for new compilation.",
+    "style": ["feature", "file:./style.css"],
+    "category": "design",
+    "icon": "columns",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "alignContent": false,
+        "jsx": false,
+        "color": {
+            "text": true,
+            "background": true,
+            "gradients": true,
+            "link": true
+        },
+        "fullHeight": false
+    }
+}

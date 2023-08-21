@@ -1,0 +1,21 @@
+{
+    "name": "developer_assignment",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "wp-scripts build",
+        "postbuild": "rimraf build/**/*.map",
+        "start": "wp-scripts start",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js",
+        "format:css": "npm run lint:css -- --fix",
+        "format:js": "npm run lint:js -- --fix"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^26.10.0",
+        "mini-css-extract-plugin": "^2.7.6",
+        "webpack-fix-style-only-entries": "^0.6.1"
+    },
+    "author": "Darko S",
+    "license": "GNU GPL"
+}

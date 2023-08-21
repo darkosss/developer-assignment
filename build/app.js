@@ -1,0 +1,1 @@
+!function(){"use strict";console.log('foo walks into a bar and says "Hello World!"')}();
